@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title><h1>CRYSTAL GAME</h1></title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            CRYSTAL COLLECTOR
+        </h1>
+    </header>
+
+    <div id = "empty-div"> </div>
+    <div id = "empty-res"> </div>
+    
+    <div id ="crystal">
+    
+        <section class = "crystal_1">
+           <img src="https://cdn.shopify.com/s/files/1/1698/5301/products/Screen_Shot_2018-03-05_at_10.37.19_AM.png?v=1520271472" alt="crystal_1">
+        </section> 
+
+        <section class = "crystal_2">
+            <img src="https://img.etsystatic.com/il/373696/904935903/il_340x270.904935903_p1km.jpg?version=0" alt="crystal_2">
+        </section>
+
+        <section class= "crystal_3">
+            <img src="https://img.etsystatic.com/il/56ccb3/1397937283/il_340x270.1397937283_cjpq.jpg?version=1" alt="crystal_3">
+        </section>
+
+        <section class = "crystal_4">
+            <img src= "https://i.pinimg.com/236x/9d/67/fd/9d67fd0f51a45a75ae32f3d568fd4893.jpg" alt="crstal_4">
+        </section>
+
+   </div>
+   
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+    <script type="text/javascript">
+
+        var totalClicked = 0;
+        var crystalone =6;
+        var crystaltwo = 25;
+        var crystalthree = 8;
+        var crystalfour = 45;
+
+
+            var randomNum = Math.floor(Math.random() * 120)
+            if ( randomNum < 19){
+                randomNum = 21;
+            }
+                console.log(randomNum)
+            $("#empty-div").html("<h1>Hello Random player!</h1>");
+
+    
+            $(".crystal_1").on("click", function() {
+                var act = 0;
+                act = crystalone + randomNum;
+                console.log(act);
+               
+       
+
+               // $("#empty-res").html(act);
+
+            
+
+            });
+
+            $(".crystal_2").on("click", function() {
+
+            var act = 0;
+                act = crystaltwo + randomNum;
+                console.log(act);
+
+
+            });
+
+             $(".crystal_3").on("click", function() {
+
+            var act = 0;
+                act = crystalthree + randomNum;
+                console.log(act);
+
+
+            });
+
+             $(".crystal_4").on("click", function() {
+
+                var act = 0;
+                act = crystalfour + randomNum;
+                console.log(act);
+
+
+                });
+
+
+
+    
+    
+    </script>
+
+
+
+</body>
+</html>

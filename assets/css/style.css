@@ -1,0 +1,23 @@
+
+
+
+.crystal_1 { background-color: aquamarine;
+    width: 300px;
+      height: 300px;
+}
+
+.crystal_2 { background-color: rgb(255, 214, 127);
+    width: 300px;
+      height: 300px;
+}
+
+.crystal_3 { background-color: rgb(182, 127, 255);
+    width: 300px;
+      height: 300px;
+}
+
+.crystal_4 { background-color: rgb(187, 127, 255);
+    width: 100px;
+      height: 100px;
+      padding: 0%;
+}
